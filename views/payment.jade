@@ -1,0 +1,776 @@
+doctype html
+html.no-js.multi-step.linux.firefox.desktop.page--show.no-banner
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0')
+    title Juguetinio - Compra
+    //if lte IE 9
+      link(href='//cdn.shopify.com/app/services/6962527/assets/8650952/checkout_stylesheet/v1-cdae02ee37e6f33af21da1a2fef6f79b-18283455539215377984/oldie', media='all', rel='stylesheet')
+    // [if gt IE 9] <!
+    link(href='https://cdn.shopify.com/app/services/6962527/assets/8650952/checkout_stylesheet/v1-cdae02ee37e6f33af21da1a2fef6f79b-18283455539215377984', media='all', rel='stylesheet')
+    // <![endif]
+    // [if gte IE 8] <!
+    script(src='https://cdn.shopify.com/app/services/6962527/javascripts/countries/8650952/en/countries-926b551b51483573c52f46aca73fbfcc2dcd0bbe-1421442823.js')
+    script(src='https://cdn.shopify.com/s/assets/checkout_v1-b48edda1a1840aeae288ff706c2cab44.js')
+    // <![endif]
+    script#__st.
+      //<![CDATA[
+      var __st={"a":6962527,"offset":-14400,"reqid":"b0c6d9a0-5a72-456c-8496-dc9868dd7fb1","pageurl":"checkout.shopify.com\\/6962527\/checkouts\/6e89077d99c33180a357c6f644e51bd8?_ga=1.159858303.317883627.1429704441","u":"d2805a92fd71","t":"checkout","offsite":1};
+      //]]>
+    script.
+      //<![CDATA[
+      (function() {
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+      s.src = 'https://cdn.shopify.com/s/javascripts/shopify_stats.js?v=6';
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+      //]]>
+  body
+    .header
+      .wrap
+        .shop
+          a(href='http://poptheme-toy.myshopify.com')
+            h1.shop__name Juguetinio
+      i.icon.icon--lock
+      .header__backdrop
+    .main
+      .order-summary-recap
+        ul.product-list
+          li.product.product--has-image
+            img.product__image(alt='Elefante Jackie', src='https://cdn.shopify.com/s/files/1/0696/2527/products/image_bb10e5be-00f9-4d31-8d0e-b0264cebb6c7_150x150_cropped.jpeg?18283455539215377984')
+            .product__info
+              span.product__info__name
+                strong Elefante Jackie
+                |  × 1
+              span.product__info__description
+            strong.product__price 11.95 Euros
+      .wrap
+        #checkout.current-step-contact_information(data-session-storage='')
+          #contact-information.section.step.step--current
+            .section__header
+              h3 Datos del comprador
+              a.section__edit-link(data-edit-contact-information='true', href='https://checkout.shopify.com/6962527/checkouts/6e89077d99c33180a357c6f644e51bd8?step=contact_information') Editar
+            form#edit_checkout_551331360.section__form.js-shipping-address-with-selector(accept-charset='UTF-8', action='/creditCard', method='post')
+              div(style='display:none')
+                input(name='utf8', type='hidden', value='✓')
+                input(name='_method', type='hidden', value='patch')
+                input(name='authenticity_token', type='hidden', value='UYH0RknNNZFir3Dbps3oA8MhiK3MCt+RloLhMDXvg+w=')
+              input#previous_step(name='previous_step', type='hidden', value='contact_information')
+              .fieldset(data-email-check='#checkout_email_suggestion')
+                .field.field--required
+                  label(for='checkout_email') Email
+                  input#checkout_email(autocapitalize='off', autocomplete='shipping email', data-autofocus='true', name='checkout[email]', placeholder='Email', size='30', spellcheck='false', type='email', value='')
+                #checkout_email_suggestion.field-group.field-group--has-subfields.hidden
+                  .field
+                    .field__inner.field__inner--horizontal-padding
+                      p
+                        | Quisiste decir 
+                        a(href='#')
+                        | ?
+              h5 Direccion de envio
+              #shipping-address.fieldset(data-shipping-address='')
+                .field.field--optional
+                  label(for='checkout_shipping_address_first_name') Nombre
+                  input#checkout_shipping_address_first_name(autocomplete='shipping given-name', name='checkout[shipping_address][first_name]', placeholder='Nombre', size='30', type='text')
+                .field.field--required
+                  label(for='checkout_shipping_address_last_name') Apellido
+                  input#checkout_shipping_address_last_name(autocomplete='shipping family-name', name='checkout[shipping_address][last_name]', placeholder='Apellido', size='30', type='text')
+                .field.field--required
+                  label(for='checkout_shipping_address_address1') Direccion
+                  input#checkout_shipping_address_address1(autocomplete='shipping address-line1', name='checkout[shipping_address][address1]', placeholder='Direccion', size='30', type='text')
+                .field.field--optional
+                  label(for='checkout_shipping_address_address2') Apt, suite, etc.
+                  input#checkout_shipping_address_address2(autocomplete='shipping address-line2', name='checkout[shipping_address][address2]', placeholder='Apt, suite, etc. (opcional)', size='30', type='text')
+                .field.field--required
+                  label(for='checkout_shipping_address_city') Ciudad
+                  input#checkout_shipping_address_city(autocomplete='shipping locality', name='checkout[shipping_address][city]', placeholder='Ciudad', size='30', type='text')
+                .field.field--required(data-country-section='1')
+                  label(for='checkout_shipping_address_country') País
+                  select#checkout_shipping_address_country(autocomplete='shipping country', name='checkout[shipping_address][country]', size='1')
+                    option(value='United States') United States
+                    option(value='United Kingdom') United Kingdom
+                    option(value='Singapore') Singapore
+                    option(value='New Zealand') New Zealand
+                    option(disabled='disabled', value='---') ---
+                    option(value='Afghanistan') Afghanistan
+                    option(value='Aland Islands') Åland Islands
+                    option(value='Albania') Albania
+                    option(value='Algeria') Algeria
+                    option(value='Andorra') Andorra
+                    option(value='Angola') Angola
+                    option(value='Anguilla') Anguilla
+                    option(value='Antigua And Barbuda') Antigua & Barbuda
+                    option(value='Argentina') Argentina
+                    option(value='Armenia') Armenia
+                    option(value='Aruba') Aruba
+                    option(value='Australia') Australia
+                    option(value='Austria') Austria
+                    option(value='Azerbaijan') Azerbaijan
+                    option(value='Bahamas') Bahamas
+                    option(value='Bahrain') Bahrain
+                    option(value='Bangladesh') Bangladesh
+                    option(value='Barbados') Barbados
+                    option(value='Belarus') Belarus
+                    option(value='Belgium') Belgium
+                    option(value='Belize') Belize
+                    option(value='Benin') Benin
+                    option(value='Bermuda') Bermuda
+                    option(value='Bhutan') Bhutan
+                    option(value='Bolivia') Bolivia
+                    option(value='Bosnia And Herzegovina') Bosnia & Herzegovina
+                    option(value='Botswana') Botswana
+                    option(value='Bouvet Island') Bouvet Island
+                    option(value='Brazil') Brazil
+                    option(value='British Indian Ocean Territory') British Indian Ocean Territory
+                    option(value='Virgin Islands, British') British Virgin Islands
+                    option(value='Brunei') Brunei
+                    option(value='Bulgaria') Bulgaria
+                    option(value='Burkina Faso') Burkina Faso
+                    option(value='Burundi') Burundi
+                    option(value='Cambodia') Cambodia
+                    option(value='Republic of Cameroon') Cameroon
+                    option(value='Canada') Canada
+                    option(value='Cape Verde') Cape Verde
+                    option(value='Cayman Islands') Cayman Islands
+                    option(value='Central African Republic') Central African Republic
+                    option(value='Chad') Chad
+                    option(value='Chile') Chile
+                    option(value='China') China
+                    option(value='Christmas Island') Christmas Island
+                    option(value='Cocos (Keeling) Islands') Cocos (Keeling) Islands
+                    option(value='Colombia') Colombia
+                    option(value='Comoros') Comoros
+                    option(value='Congo') Congo - Brazzaville
+                    option(value='Congo, The Democratic Republic Of The') Congo - Kinshasa
+                    option(value='Cook Islands') Cook Islands
+                    option(value='Costa Rica') Costa Rica
+                    option(value='Croatia') Croatia
+                    option(value='Cuba') Cuba
+                    option(value='Curaçao') Curaçao
+                    option(value='Cyprus') Cyprus
+                    option(value='Czech Republic') Czech Republic
+                    option(value="Côte d'Ivoire") Côte d’Ivoire
+                    option(value='Denmark') Denmark
+                    option(value='Djibouti') Djibouti
+                    option(value='Dominica') Dominica
+                    option(value='Dominican Republic') Dominican Republic
+                    option(value='Ecuador') Ecuador
+                    option(value='Egypt') Egypt
+                    option(value='El Salvador') El Salvador
+                    option(value='Equatorial Guinea') Equatorial Guinea
+                    option(value='Eritrea') Eritrea
+                    option(value='Estonia') Estonia
+                    option(value='Ethiopia') Ethiopia
+                    option(value='Falkland Islands (Malvinas)') Falkland Islands
+                    option(value='Faroe Islands') Faroe Islands
+                    option(value='Fiji') Fiji
+                    option(value='Finland') Finland
+                    option(value='France') France
+                    option(value='French Guiana') French Guiana
+                    option(value='French Polynesia') French Polynesia
+                    option(value='French Southern Territories') French Southern Territories
+                    option(value='Gabon') Gabon
+                    option(value='Gambia') Gambia
+                    option(value='Georgia') Georgia
+                    option(value='Germany') Germany
+                    option(value='Ghana') Ghana
+                    option(value='Gibraltar') Gibraltar
+                    option(value='Greece') Greece
+                    option(value='Greenland') Greenland
+                    option(value='Grenada') Grenada
+                    option(value='Guadeloupe') Guadeloupe
+                    option(value='Guatemala') Guatemala
+                    option(value='Guernsey') Guernsey
+                    option(value='Guinea') Guinea
+                    option(value='Guinea Bissau') Guinea-Bissau
+                    option(value='Guyana') Guyana
+                    option(value='Haiti') Haiti
+                    option(value='Heard Island And Mcdonald Islands') Heard & McDonald Islands
+                    option(value='Honduras') Honduras
+                    option(value='Hong Kong') Hong Kong SAR China
+                    option(value='Hungary') Hungary
+                    option(value='Iceland') Iceland
+                    option(value='India') India
+                    option(value='Indonesia') Indonesia
+                    option(value='Iran, Islamic Republic Of') Iran
+                    option(value='Iraq') Iraq
+                    option(value='Ireland') Ireland
+                    option(value='Isle Of Man') Isle of Man
+                    option(value='Israel') Israel
+                    option(value='Italy') Italy
+                    option(value='Jamaica') Jamaica
+                    option(value='Japan') Japan
+                    option(value='Jersey') Jersey
+                    option(value='Jordan') Jordan
+                    option(value='Kazakhstan') Kazakhstan
+                    option(value='Kenya') Kenya
+                    option(value='Kiribati') Kiribati
+                    option(value='Kosovo') Kosovo
+                    option(value='Kuwait') Kuwait
+                    option(value='Kyrgyzstan') Kyrgyzstan
+                    option(value="Lao People's Democratic Republic") Laos
+                    option(value='Latvia') Latvia
+                    option(value='Lebanon') Lebanon
+                    option(value='Lesotho') Lesotho
+                    option(value='Liberia') Liberia
+                    option(value='Libyan Arab Jamahiriya') Libya
+                    option(value='Liechtenstein') Liechtenstein
+                    option(value='Lithuania') Lithuania
+                    option(value='Luxembourg') Luxembourg
+                    option(value='Macao') Macau SAR China
+                    option(value='Macedonia, Republic Of') Macedonia
+                    option(value='Madagascar') Madagascar
+                    option(value='Malawi') Malawi
+                    option(value='Malaysia') Malaysia
+                    option(value='Maldives') Maldives
+                    option(value='Mali') Mali
+                    option(value='Malta') Malta
+                    option(value='Martinique') Martinique
+                    option(value='Mauritania') Mauritania
+                    option(value='Mauritius') Mauritius
+                    option(value='Mayotte') Mayotte
+                    option(value='Mexico') Mexico
+                    option(value='Moldova, Republic of') Moldova
+                    option(value='Monaco') Monaco
+                    option(value='Mongolia') Mongolia
+                    option(value='Montenegro') Montenegro
+                    option(value='Montserrat') Montserrat
+                    option(value='Morocco') Morocco
+                    option(value='Mozambique') Mozambique
+                    option(value='Burma') Myanmar (Burma)
+                    option(value='Namibia') Namibia
+                    option(value='Nauru') Nauru
+                    option(value='Nepal') Nepal
+                    option(value='Netherlands') Netherlands
+                    option(value='Netherlands Antilles') Netherlands Antilles
+                    option(value='New Caledonia') New Caledonia
+                    option(value='New Zealand') New Zealand
+                    option(value='Nicaragua') Nicaragua
+                    option(value='Niger') Niger
+                    option(value='Nigeria') Nigeria
+                    option(value='Niue') Niue
+                    option(value='Norfolk Island') Norfolk Island
+                    option(value="Korea, Democratic People's Republic Of") North Korea
+                    option(value='Norway') Norway
+                    option(value='Oman') Oman
+                    option(value='Pakistan') Pakistan
+                    option(value='Palestinian Territory, Occupied') Palestinian Territories
+                    option(value='Panama') Panama
+                    option(value='Papua New Guinea') Papua New Guinea
+                    option(value='Paraguay') Paraguay
+                    option(value='Peru') Peru
+                    option(value='Philippines') Philippines
+                    option(value='Pitcairn') Pitcairn Islands
+                    option(value='Poland') Poland
+                    option(value='Portugal') Portugal
+                    option(value='Qatar') Qatar
+                    option(value='Reunion') Réunion
+                    option(value='Romania') Romania
+                    option(value='Russia') Russia
+                    option(value='Rwanda') Rwanda
+                    option(value='Samoa') Samoa
+                    option(value='San Marino') San Marino
+                    option(value='Sao Tome And Principe') São Tomé & Príncipe
+                    option(value='Saudi Arabia') Saudi Arabia
+                    option(value='Senegal') Senegal
+                    option(value='Serbia') Serbia
+                    option(value='Seychelles') Seychelles
+                    option(value='Sierra Leone') Sierra Leone
+                    option(value='Singapore') Singapore
+                    option(value='Slovakia') Slovakia
+                    option(value='Slovenia') Slovenia
+                    option(value='Solomon Islands') Solomon Islands
+                    option(value='Somalia') Somalia
+                    option(value='South Africa') South Africa
+                    option(value='South Georgia And The South Sandwich Islands') South Georgia & South Sandwich Islands
+                    option(value='South Korea') South Korea
+                    option(selected='selected', value='Spain') Spain
+                    option(value='Sri Lanka') Sri Lanka
+                    option(value='Saint Barthélemy') St. Barthélemy
+                    option(value='Saint Helena') St. Helena
+                    option(value='Saint Kitts And Nevis') St. Kitts & Nevis
+                    option(value='Saint Lucia') St. Lucia
+                    option(value='Saint Martin') St. Martin
+                    option(value='Saint Pierre And Miquelon') St. Pierre & Miquelon
+                    option(value='St. Vincent') St. Vincent & Grenadines
+                    option(value='Sudan') Sudan
+                    option(value='Suriname') Suriname
+                    option(value='Svalbard And Jan Mayen') Svalbard & Jan Mayen
+                    option(value='Swaziland') Swaziland
+                    option(value='Sweden') Sweden
+                    option(value='Switzerland') Switzerland
+                    option(value='Syria') Syria
+                    option(value='Taiwan') Taiwan
+                    option(value='Tajikistan') Tajikistan
+                    option(value='Tanzania, United Republic Of') Tanzania
+                    option(value='Thailand') Thailand
+                    option(value='Timor Leste') Timor-Leste
+                    option(value='Togo') Togo
+                    option(value='Tokelau') Tokelau
+                    option(value='Tonga') Tonga
+                    option(value='Trinidad and Tobago') Trinidad & Tobago
+                    option(value='Tunisia') Tunisia
+                    option(value='Turkey') Turkey
+                    option(value='Turkmenistan') Turkmenistan
+                    option(value='Turks and Caicos Islands') Turks & Caicos Islands
+                    option(value='Tuvalu') Tuvalu
+                    option(value='United States Minor Outlying Islands') U.S. Outlying Islands
+                    option(value='Uganda') Uganda
+                    option(value='Ukraine') Ukraine
+                    option(value='United Arab Emirates') United Arab Emirates
+                    option(value='United Kingdom') United Kingdom
+                    option(value='United States') United States
+                    option(value='Uruguay') Uruguay
+                    option(value='Uzbekistan') Uzbekistan
+                    option(value='Vanuatu') Vanuatu
+                    option(value='Holy See (Vatican City State)') Vatican City
+                    option(value='Venezuela') Venezuela
+                    option(value='Vietnam') Vietnam
+                    option(value='Wallis And Futuna') Wallis & Futuna
+                    option(value='Western Sahara') Western Sahara
+                    option(value='Yemen') Yemen
+                    option(value='Zambia') Zambia
+                    option(value='Zimbabwe') Zimbabwe
+                .field.field--required(data-province-section='1')
+                  label(for='checkout_shipping_address_province') Provincia
+                  input#checkout_shipping_address_province(autocomplete='shipping region', name='checkout[shipping_address][province]', placeholder='Provincia', type='text')
+                .field.field--required(data-zip-section='1')
+                  label(for='checkout_shipping_address_zip') Codigo postal
+                  input#checkout_shipping_address_zip.postal-code(autocomplete='shipping postal-code', name='checkout[shipping_address][zip]', placeholder='28039', size='30', type='text')
+                .field.field--optional
+                  label(for='checkout_shipping_address_phone') Telefono
+                  input#checkout_shipping_address_phone(autocomplete='shipping tel', name='checkout[shipping_address][phone]', placeholder='Telefono (opcional)', size='30', type='tel')
+              .call-to-action
+                input.btn(name='commit', type='submit', value='Continuar')
+            .section__summary
+              p
+              p.address
+          #shipping-method.section.step.step--blank
+            .section__header
+              h3 Envio
+              a.section__edit-link(href='https://checkout.shopify.com/6962527/checkouts/6e89077d99c33180a357c6f644e51bd8?step=shipping_and_payment_method') Editar
+            .section__blank-slate
+              i.closed-box
+              p Introduzca informacion de envio
+            .section__summary
+          #payment.section.step.step--blank.hidden
+            .section__header
+              h3 Facturacion & Modo de pago
+              a.section__edit-link(data-edit-payment='true', href='https://checkout.shopify.com/6962527/checkouts/6e89077d99c33180a357c6f644e51bd8?step=shipping_and_payment_method') Editar
+            .section__form
+              form#edit_checkout_551331360.secure-form(accept-charset='UTF-8', action='https://us-west-2-deposit.cs.shopify.com/sessions', method='post')
+                div(style='display:none')
+                  input(name='utf8', type='hidden', value='✓')
+                  input(name='authenticity_token', type='hidden', value='UYH0RknNNZFir3Dbps3oA8MhiK3MCt+RloLhMDXvg+w=')
+                input(name='c', type='hidden', value='eyJjaXBoZXJ0ZXh0IjoiMHhhNWJhMWU5OTg5ZjM0M2U0Y2E0OTYxMTA2MzdkN2NkNjY3ZjRlYzJlYzBhOGNiMzQwOGZhZjMzOGY3ZTVjOTZhZGY5YWM0MTVlNDM1N2M3Zjg2OWQ3ZTAyNTQzZTdjOWQ3ODAzYzA0MDA3ZWFjNTRmZmIwODA2YzY5OTZjYzM3ODllOTEzNTIxOTliMTQ2MjEyMzdhMzI2MzY1Mzk0NGE1NTE4ZTNmYWI4MGM2NTAxNzM5M2MyMDk0N2M3YzkzYWQyZDJiMWEwOWY2MWUwMzRhZmUxN2VmNjNmZWIyMDgyYThiZjJiYyIsIm1vZCI6IjB4MTQxZTM1OThjNmViZTYwNDRmZThhNjhjZjQwMzNlYTI4Y2Y2MGM4ZDJkYmQzYWI0NGY5YzFkOWUzYzkyYTU2MjQ3YWU5ZjdiYTEyNzhiNzc3NTIzMGM0ZjZlZTk2M2EyZThiMTdkMDZmMmEwZWE5ZTBkNWE3ODgwYjUzMWIwNzRkYzU5NzFmZmJmYWIzMmU2ZjI4MTkyMjZiNTFhMjllNDY0Y2NhZWIzZGY3OWQwOTQ0NDBjZDQyMTM4MDg3Y2FkNWViNDZhZjk5NWQyNjBlOTE2YTQ3YmFkNDZmODVlNDE4ZmFkODdiIiwiZXhwIjoiMHgxMDAwMSIsInJlcXVlc3QiOlszNjM2NDU1Mzg2LDEzODUzOTczNTIsIjB4ZjYxNmZkZDE2MWQ1YTMxMDc4MWI0YzcwN2EyNGRkNDQiXX0KCg==')
+                input(name='d', type='hidden', value='bU9mN1dKUTZxM1NTTTkxZ3N1dlFuS2RJeHdYVmkwdlQ2dDc2TDdFVnUzekw2VlNrR2FURkQwWTlDdmcxVTRCajdBRW9PZ3k4dktMY2lRNjV0RjZOaXVOSE10WWVhcnF0SEhlbDBPRlJ4Z0MzV1A3eUtGQWg1dTJOa09ESUlGY1RSNThscStpcy83Sm1jcDJlWXc4Snc0alhFRXFhNE5MMVpvcGdzUExkaTVYeGdJV3VXekhkRWxOSVVMOXBHaUtMLS1kZnp6S2hmOG9tQVBCTEQ1WXRFbElBPT0=--ed5eea791b8c2a59ec6fc84ffbafe66d31ce72d6')
+                input#checkout_shipping_rate_id(disabled='disabled', name='checkout[shipping_rate_id]', size='30', type='hidden')
+                div(data-payment-subform='required')
+                  .fieldset
+                    .field.field--has-radio-button(data-select-gateway='6817940')
+                      input#checkout_payment_gateway_6817940(autocomplete='off', checked='checked', name='checkout[payment_gateway]', type='radio', value='6817940')
+                      label.label--full-width(for='checkout_payment_gateway_6817940')
+                        | Tarjeta de credito
+                      ul.field__icon.payment-methods(data-brand-icons-for-gateway='6817940')
+                        li.payment-method.generic.selected(data-payment-icon='generic') Tarjeta de credito
+                        li.payment-method.visa(data-payment-icon='visa') Visa
+                        li.payment-method.master(data-payment-icon='master') MasterCard
+                        li.payment-method.american-express(data-payment-icon='american-express') American Express
+                    .field-group.field-group--has-subfields(data-subfields-for-gateway='6817940')
+                      .field.field--required
+                        label(for='checkout_credit_card_number') Numero tarjeta
+                        input#checkout_credit_card_number(autocomplete='off', data-autofocus='true', data-credit-card='number', data-persist='credit_card_number', data-session-storage='false', name='checkout[credit_card][number]', placeholder='Card number', size='30', type='tel', value='')
+                        i.field__icon.icon.icon--lock-dark.has-tooltip
+                          span.tooltip.tooltip--right-on-mobile
+                            | Todas las transacciones son seguras. La informacion sobre la tarjeta de credito nunca se almacena.
+                      .field.field--required
+                        label(for='checkout_credit_card_name') Titular de la tarjeta
+                        input#checkout_credit_card_name(autocomplete='cc-name', data-persist='credit_card_name', name='checkout[credit_card][name]', placeholder='Name on card', size='30', type='text')
+                      .field.field--required
+                        label(for='checkout_credit_card_month') Fecha de expiracion
+                        .select-group
+                          select#checkout_credit_card_month(autocomplete='cc-exp-month', data-persist='credit_card_month', name='checkout[credit_card][month]')
+                            option(value='1') 01
+                            option(value='2') 02
+                            option(value='3') 03
+                            option(value='4') 04
+                            option(value='5') 05
+                            option(value='6') 06
+                            option(value='7') 07
+                            option(value='8') 08
+                            option(value='9') 09
+                            option(value='10') 10
+                            option(value='11') 11
+                            option(value='12') 12
+                          select#checkout_credit_card_year(autocomplete='cc-exp-year', data-persist='credit_card_year', name='checkout[credit_card][year]')
+                            option(value='2015') 2015
+                            option(value='2016') 2016
+                            option(value='2017') 2017
+                            option(value='2018') 2018
+                            option(value='2019') 2019
+                            option(value='2020') 2020
+                            option(value='2021') 2021
+                            option(value='2022') 2022
+                            option(value='2023') 2023
+                            option(value='2024') 2024
+                            option(value='2025') 2025
+                      .field.field--required
+                        label(for='checkout_credit_card_verification_value')
+                          | CVV
+                          i.icon.icon--info.has-tooltip
+                            span.tooltip.tooltip--left-on-mobile
+                              | Puede encontrar los tres digitos de CVV en la parte trasera de su tarjeta. Si realiza el pago con American Express, encontrara el CVV de cuatro digitos en la parte delantera de la misma.
+                        input#checkout_credit_card_verification_value(autocomplete='off', data-credit-card='cvv', data-persist='credit_card_cvv', data-session-storage='false', maxlength='4', name='checkout[credit_card][verification_value]', placeholder='CVV', size='30', type='tel')
+                    .field.field--has-radio-button(data-select-gateway='6817972')
+                      input#checkout_payment_gateway_6817972(autocomplete='off', name='checkout[payment_gateway]', type='radio', value='6817972')
+                      label.label--full-width(for='checkout_payment_gateway_6817972')
+                        | Pago contrarreembolso
+                      ul.field__icon.payment-methods(data-brand-icons-for-gateway='6817972')
+                  h5(data-billing-address='') Direccion de Facturacion
+                  .fieldset.fieldset--billing-address(data-billing-address='')
+                    #billing-address.field-group.field-group--has-subfields(data-billing-address-fields='')
+                      .field.field--optional
+                        label(for='checkout_billing_address_first_name') Nombre
+                        input#checkout_billing_address_first_name(autocomplete='billing given-name', data-persist='billing_address_first_name', name='checkout[billing_address][first_name]', placeholder='First name', size='30', type='text')
+                      .field.field--required
+                        label(for='checkout_billing_address_last_name') Apellido
+                        input#checkout_billing_address_last_name(autocomplete='billing family-name', data-persist='billing_address_last_name', name='checkout[billing_address][last_name]', placeholder='Last name', size='30', type='text')
+                      .field.field--required
+                        label(for='checkout_billing_address_address1') Direccion
+                        input#checkout_billing_address_address1(autocomplete='billing address-line1', data-persist='billing_address_address1', name='checkout[billing_address][address1]', placeholder='Address', size='30', type='text')
+                      .field.field--optional
+                        label(for='checkout_billing_address_address2') Apt, suite, etc.
+                        input#checkout_billing_address_address2(autocomplete='shipping address-line2', data-persist='billing_address_address2', name='checkout[billing_address][address2]', placeholder='Apt, suite, etc. (optional)', size='30', type='text')
+                      .field.field--required
+                        label(for='checkout_billing_address_city') Ciudad
+                        input#checkout_billing_address_city(autocomplete='billing locality', data-persist='billing_address_city', name='checkout[billing_address][city]', placeholder='City', size='30', type='text')
+                      .field.field--required(data-country-section='1')
+                        label(for='checkout_billing_address_country') Pais
+                        select#checkout_billing_address_country(autocomplete='billing country', data-persist='billing_address_country', name='checkout[billing_address][country]', size='1')
+                          option(value='United States') United States
+                          option(value='United Kingdom') United Kingdom
+                          option(value='Singapore') Singapore
+                          option(value='New Zealand') New Zealand
+                          option(disabled='disabled', value='---') ---
+                          option(value='Afghanistan') Afghanistan
+                          option(value='Aland Islands') Åland Islands
+                          option(value='Albania') Albania
+                          option(value='Algeria') Algeria
+                          option(value='Andorra') Andorra
+                          option(value='Angola') Angola
+                          option(value='Anguilla') Anguilla
+                          option(value='Antigua And Barbuda') Antigua & Barbuda
+                          option(value='Argentina') Argentina
+                          option(value='Armenia') Armenia
+                          option(value='Aruba') Aruba
+                          option(value='Australia') Australia
+                          option(value='Austria') Austria
+                          option(value='Azerbaijan') Azerbaijan
+                          option(value='Bahamas') Bahamas
+                          option(value='Bahrain') Bahrain
+                          option(value='Bangladesh') Bangladesh
+                          option(value='Barbados') Barbados
+                          option(value='Belarus') Belarus
+                          option(value='Belgium') Belgium
+                          option(value='Belize') Belize
+                          option(value='Benin') Benin
+                          option(value='Bermuda') Bermuda
+                          option(value='Bhutan') Bhutan
+                          option(value='Bolivia') Bolivia
+                          option(value='Bosnia And Herzegovina') Bosnia & Herzegovina
+                          option(value='Botswana') Botswana
+                          option(value='Bouvet Island') Bouvet Island
+                          option(value='Brazil') Brazil
+                          option(value='British Indian Ocean Territory') British Indian Ocean Territory
+                          option(value='Virgin Islands, British') British Virgin Islands
+                          option(value='Brunei') Brunei
+                          option(value='Bulgaria') Bulgaria
+                          option(value='Burkina Faso') Burkina Faso
+                          option(value='Burundi') Burundi
+                          option(value='Cambodia') Cambodia
+                          option(value='Republic of Cameroon') Cameroon
+                          option(value='Canada') Canada
+                          option(value='Cape Verde') Cape Verde
+                          option(value='Cayman Islands') Cayman Islands
+                          option(value='Central African Republic') Central African Republic
+                          option(value='Chad') Chad
+                          option(value='Chile') Chile
+                          option(value='China') China
+                          option(value='Christmas Island') Christmas Island
+                          option(value='Cocos (Keeling) Islands') Cocos (Keeling) Islands
+                          option(value='Colombia') Colombia
+                          option(value='Comoros') Comoros
+                          option(value='Congo') Congo - Brazzaville
+                          option(value='Congo, The Democratic Republic Of The') Congo - Kinshasa
+                          option(value='Cook Islands') Cook Islands
+                          option(value='Costa Rica') Costa Rica
+                          option(value='Croatia') Croatia
+                          option(value='Cuba') Cuba
+                          option(value='Curaçao') Curaçao
+                          option(value='Cyprus') Cyprus
+                          option(value='Czech Republic') Czech Republic
+                          option(value="Côte d'Ivoire") Côte d’Ivoire
+                          option(value='Denmark') Denmark
+                          option(value='Djibouti') Djibouti
+                          option(value='Dominica') Dominica
+                          option(value='Dominican Republic') Dominican Republic
+                          option(value='Ecuador') Ecuador
+                          option(value='Egypt') Egypt
+                          option(value='El Salvador') El Salvador
+                          option(value='Equatorial Guinea') Equatorial Guinea
+                          option(value='Eritrea') Eritrea
+                          option(value='Estonia') Estonia
+                          option(value='Ethiopia') Ethiopia
+                          option(value='Falkland Islands (Malvinas)') Falkland Islands
+                          option(value='Faroe Islands') Faroe Islands
+                          option(value='Fiji') Fiji
+                          option(value='Finland') Finland
+                          option(value='France') France
+                          option(value='French Guiana') French Guiana
+                          option(value='French Polynesia') French Polynesia
+                          option(value='French Southern Territories') French Southern Territories
+                          option(value='Gabon') Gabon
+                          option(value='Gambia') Gambia
+                          option(value='Georgia') Georgia
+                          option(value='Germany') Germany
+                          option(value='Ghana') Ghana
+                          option(value='Gibraltar') Gibraltar
+                          option(value='Greece') Greece
+                          option(value='Greenland') Greenland
+                          option(value='Grenada') Grenada
+                          option(value='Guadeloupe') Guadeloupe
+                          option(value='Guatemala') Guatemala
+                          option(value='Guernsey') Guernsey
+                          option(value='Guinea') Guinea
+                          option(value='Guinea Bissau') Guinea-Bissau
+                          option(value='Guyana') Guyana
+                          option(value='Haiti') Haiti
+                          option(value='Heard Island And Mcdonald Islands') Heard & McDonald Islands
+                          option(value='Honduras') Honduras
+                          option(value='Hong Kong') Hong Kong SAR China
+                          option(value='Hungary') Hungary
+                          option(value='Iceland') Iceland
+                          option(value='India') India
+                          option(value='Indonesia') Indonesia
+                          option(value='Iran, Islamic Republic Of') Iran
+                          option(value='Iraq') Iraq
+                          option(value='Ireland') Ireland
+                          option(value='Isle Of Man') Isle of Man
+                          option(value='Israel') Israel
+                          option(value='Italy') Italy
+                          option(value='Jamaica') Jamaica
+                          option(value='Japan') Japan
+                          option(value='Jersey') Jersey
+                          option(value='Jordan') Jordan
+                          option(value='Kazakhstan') Kazakhstan
+                          option(value='Kenya') Kenya
+                          option(value='Kiribati') Kiribati
+                          option(value='Kosovo') Kosovo
+                          option(value='Kuwait') Kuwait
+                          option(value='Kyrgyzstan') Kyrgyzstan
+                          option(value="Lao People's Democratic Republic") Laos
+                          option(value='Latvia') Latvia
+                          option(value='Lebanon') Lebanon
+                          option(value='Lesotho') Lesotho
+                          option(value='Liberia') Liberia
+                          option(value='Libyan Arab Jamahiriya') Libya
+                          option(value='Liechtenstein') Liechtenstein
+                          option(value='Lithuania') Lithuania
+                          option(value='Luxembourg') Luxembourg
+                          option(value='Macao') Macau SAR China
+                          option(value='Macedonia, Republic Of') Macedonia
+                          option(value='Madagascar') Madagascar
+                          option(value='Malawi') Malawi
+                          option(value='Malaysia') Malaysia
+                          option(value='Maldives') Maldives
+                          option(value='Mali') Mali
+                          option(value='Malta') Malta
+                          option(value='Martinique') Martinique
+                          option(value='Mauritania') Mauritania
+                          option(value='Mauritius') Mauritius
+                          option(value='Mayotte') Mayotte
+                          option(value='Mexico') Mexico
+                          option(value='Moldova, Republic of') Moldova
+                          option(value='Monaco') Monaco
+                          option(value='Mongolia') Mongolia
+                          option(value='Montenegro') Montenegro
+                          option(value='Montserrat') Montserrat
+                          option(value='Morocco') Morocco
+                          option(value='Mozambique') Mozambique
+                          option(value='Burma') Myanmar (Burma)
+                          option(value='Namibia') Namibia
+                          option(value='Nauru') Nauru
+                          option(value='Nepal') Nepal
+                          option(value='Netherlands') Netherlands
+                          option(value='Netherlands Antilles') Netherlands Antilles
+                          option(value='New Caledonia') New Caledonia
+                          option(value='New Zealand') New Zealand
+                          option(value='Nicaragua') Nicaragua
+                          option(value='Niger') Niger
+                          option(value='Nigeria') Nigeria
+                          option(value='Niue') Niue
+                          option(value='Norfolk Island') Norfolk Island
+                          option(value="Korea, Democratic People's Republic Of") North Korea
+                          option(value='Norway') Norway
+                          option(value='Oman') Oman
+                          option(value='Pakistan') Pakistan
+                          option(value='Palestinian Territory, Occupied') Palestinian Territories
+                          option(value='Panama') Panama
+                          option(value='Papua New Guinea') Papua New Guinea
+                          option(value='Paraguay') Paraguay
+                          option(value='Peru') Peru
+                          option(value='Philippines') Philippines
+                          option(value='Pitcairn') Pitcairn Islands
+                          option(value='Poland') Poland
+                          option(value='Portugal') Portugal
+                          option(value='Qatar') Qatar
+                          option(value='Reunion') Réunion
+                          option(value='Romania') Romania
+                          option(value='Russia') Russia
+                          option(value='Rwanda') Rwanda
+                          option(value='Samoa') Samoa
+                          option(value='San Marino') San Marino
+                          option(value='Sao Tome And Principe') São Tomé & Príncipe
+                          option(value='Saudi Arabia') Saudi Arabia
+                          option(value='Senegal') Senegal
+                          option(value='Serbia') Serbia
+                          option(value='Seychelles') Seychelles
+                          option(value='Sierra Leone') Sierra Leone
+                          option(value='Singapore') Singapore
+                          option(value='Slovakia') Slovakia
+                          option(value='Slovenia') Slovenia
+                          option(value='Solomon Islands') Solomon Islands
+                          option(value='Somalia') Somalia
+                          option(value='South Africa') South Africa
+                          option(value='South Georgia And The South Sandwich Islands') South Georgia & South Sandwich Islands
+                          option(value='South Korea') South Korea
+                          option(selected='selected', value='Spain') Spain
+                          option(value='Sri Lanka') Sri Lanka
+                          option(value='Saint Barthélemy') St. Barthélemy
+                          option(value='Saint Helena') St. Helena
+                          option(value='Saint Kitts And Nevis') St. Kitts & Nevis
+                          option(value='Saint Lucia') St. Lucia
+                          option(value='Saint Martin') St. Martin
+                          option(value='Saint Pierre And Miquelon') St. Pierre & Miquelon
+                          option(value='St. Vincent') St. Vincent & Grenadines
+                          option(value='Sudan') Sudan
+                          option(value='Suriname') Suriname
+                          option(value='Svalbard And Jan Mayen') Svalbard & Jan Mayen
+                          option(value='Swaziland') Swaziland
+                          option(value='Sweden') Sweden
+                          option(value='Switzerland') Switzerland
+                          option(value='Syria') Syria
+                          option(value='Taiwan') Taiwan
+                          option(value='Tajikistan') Tajikistan
+                          option(value='Tanzania, United Republic Of') Tanzania
+                          option(value='Thailand') Thailand
+                          option(value='Timor Leste') Timor-Leste
+                          option(value='Togo') Togo
+                          option(value='Tokelau') Tokelau
+                          option(value='Tonga') Tonga
+                          option(value='Trinidad and Tobago') Trinidad & Tobago
+                          option(value='Tunisia') Tunisia
+                          option(value='Turkey') Turkey
+                          option(value='Turkmenistan') Turkmenistan
+                          option(value='Turks and Caicos Islands') Turks & Caicos Islands
+                          option(value='Tuvalu') Tuvalu
+                          option(value='United States Minor Outlying Islands') U.S. Outlying Islands
+                          option(value='Uganda') Uganda
+                          option(value='Ukraine') Ukraine
+                          option(value='United Arab Emirates') United Arab Emirates
+                          option(value='United Kingdom') United Kingdom
+                          option(value='United States') United States
+                          option(value='Uruguay') Uruguay
+                          option(value='Uzbekistan') Uzbekistan
+                          option(value='Vanuatu') Vanuatu
+                          option(value='Holy See (Vatican City State)') Vatican City
+                          option(value='Venezuela') Venezuela
+                          option(value='Vietnam') Vietnam
+                          option(value='Wallis And Futuna') Wallis & Futuna
+                          option(value='Western Sahara') Western Sahara
+                          option(value='Yemen') Yemen
+                          option(value='Zambia') Zambia
+                          option(value='Zimbabwe') Zimbabwe
+                      .field.field--required(data-province-section='1')
+                        label(for='checkout_billing_address_province') Provincia
+                        input#checkout_billing_address_province(autocomplete='billing region', data-persist='billing_address_province', name='checkout[billing_address][province]', placeholder='Province', type='text')
+                      .field.field--required(data-zip-section='1')
+                        label(for='checkout_billing_address_zip') Codigo postal
+                        input#checkout_billing_address_zip.postal-code(autocomplete='billing postal-code', data-persist='billing_address_zip', name='checkout[billing_address][zip]', placeholder='28039', size='30', type='text')
+                      .field.field--optional
+                        label(for='checkout_billing_address_phone') Telefono
+                        input#checkout_billing_address_phone.optional(autocomplete='billing tel', name='checkout[billing_address][phone]', placeholder='Phone (optional)', size='30', type='tel')
+                  .call-to-action.call-to-action--final
+                    label
+                      input(name='checkout[buyer_accepts_marketing]', type='hidden', value='0')
+                      input#checkout_buyer_accepts_marketing(name='checkout[buyer_accepts_marketing]', type='checkbox', value='1')
+                      |       Suscribete a nuestras noticias
+                    input.btn.btn--primary(data-submit-payment='true', name='complete', type='submit', value='Place my order')
+                .hidden(data-payment-subform='gift_cards')
+                  .section__blank-slate
+                    input#checkout_payment_gateway(disabled='disabled', name='checkout[payment_gateway]', size='30', type='hidden', value='free')
+                    i.icon.icon--free-tag
+                    p Su pedido está cubierto por sus tarjetas de regalo.
+                  .call-to-action.call-to-action--final
+                    label
+                      input(disabled='disabled', name='checkout[buyer_accepts_marketing]', type='hidden', value='0')
+                      input#checkout_buyer_accepts_marketing(disabled='disabled', name='checkout[buyer_accepts_marketing]', type='checkbox', value='1')
+                      |       Suscribete a nuestras noticias
+                    input.btn.btn--primary(data-submit-payment='true', name='complete', type='submit', value='Place my order')
+                .hidden(data-payment-subform='free')
+                  .section__blank-slate
+                    input#checkout_payment_gateway(disabled='disabled', name='checkout[payment_gateway]', size='30', type='hidden', value='free')
+                    i.icon.icon--free-tag
+                    p
+                      | Tu pedido es 
+                      strong GRATUITO
+                      | . No es necesario que pagues nada.
+                  .call-to-action.call-to-action--final
+                    label
+                      input(disabled='disabled', name='checkout[buyer_accepts_marketing]', type='hidden', value='0')
+                      input#checkout_buyer_accepts_marketing(disabled='disabled', name='checkout[buyer_accepts_marketing]', type='checkbox', value='1')
+                      |       Suscribete a nuestras noticias
+                    input.btn.btn--primary(data-submit-payment='true', name='complete', type='submit', value='Place my order')
+            .section__summary
+              p Gratuito
+        .order-summary
+          .order-summary__section.order-summary__section--header
+            h3 Resumen de tu pedido
+          .summary-body
+            .order-summary__section.order-summary__section--product-list
+              ul.product-list
+                li.product.product--has-image
+                  img.product__image(alt='Elefante Jackie', src='https://cdn.shopify.com/s/files/1/0696/2527/products/image_bb10e5be-00f9-4d31-8d0e-b0264cebb6c7_150x150_cropped.jpeg?18283455539215377984')
+                  .product__info
+                    span.product__info__name
+                      strong Elefante Jackie
+                      |  × 1
+                    span.product__info__description
+                  strong.product__price 11.95 Euros
+            .order-summary__section(data-order-summary-section='payment-lines')
+              .total-line.total-line--subtotal
+                span.total-line__name
+                  | Precio del producto
+                strong.total-line__price(data-checkout-subtotal-price-target='') 11.95 Euros
+              .total-line.total-line--shipping
+                span.total-line__name
+                  | Gastos de envio
+                strong.total-line__price(data-checkout-total-shipping-target='') 5.68 Euros
+              .total-line.total-line--total
+                span.total-line__name
+                  | Subtotal
+                strong.total-line__price(data-checkout-total-price-target='') 17.63 Euros
+              .total-line.total-line--taxes
+                span.total-line__name
+                  | IVA
+                strong.total-line__price(data-checkout-total-taxes-target='') —
+            .order-summary__section(data-order-summary-section='payment-due')
+              .payment-due-container
+                span.payment-due__label
+                  | Total
+                .payment-due
+                  .payment-due__price(data-checkout-payment-due-target='') 11.95 Euros
+                  .payment-due__currency
+        .section.section--additional-mobile-cta
+          input#additional-mobile-cta.btn(name='commit', type='submit', value='Continuar')
